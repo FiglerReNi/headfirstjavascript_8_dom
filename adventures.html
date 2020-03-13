@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Figure Adventure</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="adventures.css">
+    <script type="text/javascript" src="adventures_1.js"></script>
+    <script type="text/javascript" src="adventures_2.js"></script>
+    <script type="text/javascript" src="adventures_3.js"></script>
+</head>
+<body onload="resizeRock()">
+<div class="container">
+    <img id="kep" src="scene0.png" height="340" width="340"/></br>
+    <div class="text-center" id="scenetext"></div>
+    </br>
+    <!--    Append:-->
+    <!--    <div class="text-center" id="scenetext">Teszt</div></br>-->
+    <div id="gombok">
+        <!--        <label>Please choose: </label>-->
+        <!--        <button id='decision1' onclick="choose(1)" value="1">1</button>-->
+        <!--        <button id='decision2' onclick="choose(2)" value="2">2</button>-->
+        <!--        Bootstrap style-->
+        <!--        <span class="btn btn-secondary" id='decision1' onclick="choose(1)">Start Game</span>-->
+        <!--        <span class="btn btn-secondary" id='decision2' onclick="choose(2)" style="visibility: hidden"></span>-->
+        <!--        Stylsheet-->
+        <span class="decision" id='decision1' onclick="choose(1)" onmouseout="this.className = 'decision'"
+              onmouseover="this.className = 'inverse'">Start Game</span>
+        <span class="decision" id='decision2' onclick="choose(2)" style="visibility: hidden"
+              onmouseout="this.className = 'decision'" onmouseover="this.className = 'inverse'"></span>
+    </div>
+    <div>
+        </br>
+        <div class="text-center" id="history"></div>
+    </div>
+</div>
+</body>
+</html>
+
